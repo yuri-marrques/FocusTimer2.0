@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="./js/main.js" type="module" defer></script>
+
+    <title>Focus Timer</title>
+</head>
+<body>
+    <div id="app">
+        <div class="container">
+            <div class="timer">
+                <span id="minutes">00</span>
+                <span>:</span>
+                <span id="seconds">00</span>
+            </div>
+
+            <span id="controls">
+                <button data-action="playCountdown" class="ph-bold ph-play-circle"></button>
+                <button data-action="playCountdown" class="ph-bold ph-pause-circle"></button>
+                <button data-action="addMinutes" class="ph-bold ph-plus-circle"></button>
+                <button data-action="removeMinutes" class="ph-bold ph-minus-circle"></button>
+            </span>
+        </div>
+
+        <span id="audio-control">
+            <button data-action="forestSound" class="ph-bold ph-tree-evergreen"></button>
+            <button data-action="rainSound" class="ph-bold ph-cloud-rain"></button>
+            <button data-action="coffeeSound" class="ph-bold ph-storefront"></button>
+            <button data-action="fireSound" class="ph-bold ph-fire"></button>
+        </span>
+    </div>
+</body>
+</html>
